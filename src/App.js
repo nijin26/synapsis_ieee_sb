@@ -1,9 +1,6 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
+
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 
 //Components
@@ -15,7 +12,7 @@ const theme = createMuiTheme({});
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Layout>
           <Switch>
             <Route exact path="/">
