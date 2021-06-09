@@ -6,12 +6,12 @@ import { Typography } from "@material-ui/core";
 const Footer = () => {
   return (
     <div className={classes.container}>
-      <Typography variant="subtitle1" component="body1" gutterBottom>
+      <Typography variant="subtitle1" component="p" gutterBottom>
         The site is made with 💗 by IEEE SB TKMIT
       </Typography>
       <Typography
         variant="subtitle2"
-        component="body1"
+        component="p"
         display="block"
         gutterBottom
       >

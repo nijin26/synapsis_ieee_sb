@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Backdrop, Modal } from "@material-ui/core";
+import { Button, Modal } from "@material-ui/core";
 
 //image
 import Poster from "../../assets/synapsis_poster.jpg";
@@ -33,23 +33,19 @@ const Home = () => {
       >
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSc9YVyQ62FFbhu6h9BKlrOmDp3SUBEl8VuP6jfYF-CRFYzqug/viewform?embedded=true"
+          title="Synapsis"
           width="700"
           height="520"
-          frameborder="0"
+          frameBorder="0"
           marginHeight="0"
           marginWidth="0"
         >
           Loading…
         </iframe>
       </Modal>
+      ;
     </div>
   );
 };
 
 export default Home;
-
-//  <Backdrop open={modal} onClick={() => setModal(false)}>
-//    <Register open={modal} handleClose={() => setModal(false)}>
-//      My Name Is Nijin
-//    </Register>
-//  </Backdrop>;
