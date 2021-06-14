@@ -3,23 +3,11 @@ import styles from "./AboutUs.module.css";
 import Grid from "@material-ui/core/Grid";
 
 //images
-import Logo from "../../assets/about_homelogo.png";
-import Backgoround from "../../assets/about_bg.png";
+// import Backgoround from "../../assets/about_bg.png";
 
 const AboutUs = () => {
   return (
     <div>
-      <div className={styles.header}>
-        <div>
-          <img className={styles.home_logo} src={Logo} alt="" srcset="" />
-        </div>
-
-        <div className={styles.lbutton}>
-          <button className={styles.abt_btn}>About Us</button>
-          <button className={styles.reg_btn}>Register Now</button>
-        </div>
-      </div>
-
       <div className={styles.hero_section}>
         <div>
           <p className={styles.hero_main}>

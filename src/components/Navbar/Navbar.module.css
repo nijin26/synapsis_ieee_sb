@@ -1,0 +1,75 @@
+.header {
+  height: 8vh;
+  align-content: space-around;
+  background-color: #115159;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home_logo {
+  float: left;
+  width: 3rem;
+  margin-left: 2.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.lbutton {
+  float: right;
+  margin: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.abt_btn {
+  width: 125px;
+  height: 40px;
+  border-radius: 50px;
+  margin-right: 0.5rem;
+  border-color: #ffd657;
+  background-color: #115159;
+  color: #ffd657;
+  border-width: 5px;
+  font-weight: bold;
+}
+
+.reg_btn {
+  width: 125px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #ffd657;
+  color: #115159;
+  font-weight: bold;
+  border: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .home_logo {
+    float: left;
+    width: 2.5rem;
+    margin-left: 1.5rem;
+    margin-top: 0.55rem;
+    margin-bottom: 0.55rem;
+  }
+
+  .abt_btn {
+    width: 85px;
+    height: 40px;
+    margin-right: 0.5rem;
+    border-width: 3px;
+    font-size: 1.2rem;
+  }
+
+  .reg_btn {
+    width: 90px;
+    height: 40px;
+    border: none;
+    font-size: 1.1rem;
+  }
+
+  .lbutton {
+    float: right;
+    margin: 0.75rem;
+  }
+}

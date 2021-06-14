@@ -1,5 +1,10 @@
-import { Switch, Route, Redirect } from "react-router-dom";
-import { HashRouter as Router } from "react-router-dom";
+import {
+  HashRouter as Router,
+  // BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 
 //Components
 import Layout from "./components/Layout/Layout";
