@@ -8,4 +8,26 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+  font-size: 1.2rem;
+}
+
+.icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+
+.icons > a {
+  text-decoration: none;
+  color: inherit;
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    font-size: 1.6rem;
+  }
 }

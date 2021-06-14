@@ -4,6 +4,7 @@ import { Button, Modal } from "@material-ui/core";
 //image
 import tkmitLogo from "../../assets/hero_section/tkmit.png";
 import heroRight from "../../assets/hero_section/bg.png";
+import header from "../../assets/home/speakers_header.png";
 
 //styles
 import styles from "./Home.module.scss";
@@ -36,15 +37,16 @@ const Home = () => {
             <br />
             <br />
             SYNAPSIS '21 marshal as a collaborative venture put forth by{" "}
+            <b>BLAZE TKMIT </b> an organization of{" "}
             <b>
-              BLAZE TKMIT an organization of Department of Biomedical
-              Engineering TKM Institute of Technology
+              Department of Biomedical Engineering TKM Institute of Technology
             </b>{" "}
-            BLAZE TKMIT an organization of Department of Biomedical Engineering
-            TKM Institute of Technology in association with IEEE EMBS Kerala
-            Chapter, IEEE EMBS SBC TKMIT, IEEE SB TKMIT with the support of
-            Telemedicine Society and Digital Health India, Kerala, is here to
-            anchorage the new lug in health care.
+            in association with{" "}
+            <em>
+              IEEE EMBS Kerala Chapter, IEEE EMBS SBC TKMIT, IEEE SB TKMIT
+            </em>{" "}
+            with the support of Telemedicine Society and Digital Health India,
+            Kerala, is here to anchorage the new lug in health care.
           </p>
           <br />
           <h3>Pre-Synapsis</h3>
@@ -66,7 +68,7 @@ const Home = () => {
             <br />
             <br />
             The event was also embellished by a prototyping competition
-            <b>Protomata on 2nd June 2021</b> . It helped the participants to
+            <b> Protomata on 2nd June 2021</b> . It helped the participants to
             familiarize themselves with virtual prototyping and to develop
             problem-solving skills. The competition was a full-day event.
             <br />
@@ -75,6 +77,9 @@ const Home = () => {
             event that to be conducted on <b> 17th June 2021: Synapsis ’21</b>
           </p>
         </div>
+      </section>
+      <section className={styles.speakers}>
+        <img src={header} alt="header" />
       </section>
     </div>
   );

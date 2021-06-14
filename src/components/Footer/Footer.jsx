@@ -1,22 +1,30 @@
 import React from "react";
-import classes from "./Footer.module.css";
+import styles from "./Footer.module.css";
 
-import { Typography } from "@material-ui/core";
+//Icons
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import FacebookIcon from "@material-ui/icons/Facebook";
 
 const Footer = () => {
   return (
-    <div className={classes.container}>
-      <Typography variant="subtitle1" component="p" gutterBottom>
-        The site is made with 💗 by IEEE SB TKMIT
-      </Typography>
-      <Typography
-        variant="subtitle2"
-        component="p"
-        display="block"
-        gutterBottom
-      >
-        Copyright © 2021 All rights reserved
-      </Typography>
+    <div className={styles.container}>
+      <p>Copyright © 2021. IEEE SB TKMIT Kollam. All Rights Reserved</p>
+
+      <div className={styles.icons}>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/company/ieee-sb-tkmit/"
+        >
+          <LinkedInIcon fontSize="inherit" />
+        </a>
+        <a target="_blank" href="https://instagram.com/ieeesbtkmit">
+          <InstagramIcon fontSize="inherit" />
+        </a>
+        <a target="_blank" href="https://www.facebook.com/ieeetkmit/">
+          <FacebookIcon fontSize="inherit" />
+        </a>
+      </div>
     </div>
   );
 };
