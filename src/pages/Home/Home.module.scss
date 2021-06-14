@@ -1,3 +1,5 @@
+// Mobile First Design
+
 .container {
   margin: 0 auto;
   display: flex;
@@ -6,11 +8,14 @@
   align-items: center;
 }
 
-.hero {
-  min-height: 30vh;
+.grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  gap: 10;
+  grid-gap: 10px;
+}
+
+.hero {
+  min-height: 30vh;
   background: #f2e8de;
 
   &_left {
@@ -93,13 +98,114 @@
 }
 
 .speakers {
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-gap: 10px;
-
+  min-height: 40vh;
   & > img {
-    width: 800%;
+    width: 300px;
+    grid-column: 1/8;
+  }
+
+  & > .speaker {
+    grid-column: 1/9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10% 1rem;
+    height: 150px;
+
+    & > img {
+      width: 90px;
+      height: 90px;
+      border-radius: 45px;
+    }
+
+    & > .body {
+      margin: 0 1rem;
+      background: #d5f3fe;
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      border-radius: 20px;
+      padding: 10px 20px;
+
+      & > h2 {
+        font-size: 1.7rem;
+      }
+
+      & > p {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+      }
+
+      & > .info_icon {
+        display: flex;
+        background: white;
+        width: 50%;
+        padding: 5px;
+        margin: 5px 0;
+        border-radius: 10px;
+        cursor: pointer;
+        & > p {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_container {
+    background: white;
+    min-height: 48vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > img {
+      margin: 1.5rem auto;
+      width: 120px;
+      height: 120px;
+      border-radius: 60px;
+    }
+
+    & > section {
+      width: 90%;
+
+      & > h2 {
+        text-align: center;
+        margin-bottom: 5px;
+      }
+      & > p {
+        font-size: 1.2rem;
+      }
+    }
+
+    & > .schedule {
+      margin: 2rem;
+      padding: 1rem;
+      background: #d5f3fe;
+      border-radius: 1rem;
+      min-height: 100px;
+      text-align: center;
+
+      & > h2 {
+        color: black;
+        font-size: 1.8rem;
+      }
+
+      & > h3 {
+        font-size: 1.5rem;
+      }
+
+      & > p {
+        margin: 8px auto;
+        font-size: 1.3rem;
+      }
+    }
   }
 }
 
@@ -140,14 +246,55 @@
       }
     }
   }
+
+  .modal_container {
+    min-height: 40vh;
+
+    & > section {
+      width: 90%;
+
+      & > h2 {
+        font-size: 2.5rem;
+      }
+      & > p {
+        font-size: 1.5rem;
+      }
+    }
+
+    & > .schedule {
+      padding: 1rem;
+      background: #d5f3fe;
+      border-radius: 1rem;
+      min-height: 100px;
+      text-align: center;
+
+      & > h2 {
+        color: black;
+        font-size: 2.2rem;
+      }
+
+      & > h3 {
+        font-size: 1.8rem;
+      }
+
+      & > p {
+        margin: 8px auto;
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 800px) {
   .hero {
     &_left {
       grid-column: 1/6;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
       & > img {
-        width: 60%;
+        width: 70%;
       }
       & > h2 {
         margin-left: 25%;
@@ -176,17 +323,24 @@
       grid-column: 2/6;
       height: 90vh;
       & > img {
-        width: 30%;
+        width: 40%;
+      }
+      & > h1 {
+        font-size: 10rem;
       }
       & > h2 {
+        font-size: 12rem;
         margin-left: 15%;
+      }
+      & > p {
+        font-size: 2rem;
       }
     }
 
     &_right {
       grid-column: 7/9;
-      width: 50%;
-      margin-left: 50%;
+      width: 70%;
+      margin-left: 30%;
       & > img {
         width: 100%;
       }
@@ -196,6 +350,50 @@
   .about {
     &_card {
       min-height: 80vh;
+    }
+  }
+
+  .modal_container {
+    min-height: 40vh;
+    width: 50%;
+
+    & > img {
+      width: 180px;
+      height: 180px;
+      border-radius: 90px;
+    }
+
+    & > section {
+      width: 90%;
+
+      & > h2 {
+        font-size: 3.2rem;
+      }
+      & > p {
+        font-size: 2rem;
+      }
+    }
+
+    & > .schedule {
+      padding: 1rem;
+      background: #d5f3fe;
+      border-radius: 1rem;
+      min-height: 100px;
+      text-align: center;
+
+      & > h2 {
+        color: black;
+        font-size: 2.8rem;
+      }
+
+      & > h3 {
+        font-size: 2.3rem;
+      }
+
+      & > p {
+        margin: 8px auto;
+        font-size: 2rem;
+      }
     }
   }
 }
