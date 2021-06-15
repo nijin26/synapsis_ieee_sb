@@ -1,7 +1,7 @@
 {
   "name": "synapsis_ieee_sb",
-  "homepage": "https://synapsis.ieeesbtkmit.in/",
-  "version": "0.1.0",
+  "homepage": "https://nijin26.github.io/synapsis-dev-test/",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.4",
@@ -21,6 +21,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
