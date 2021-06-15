@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { Fade, Slide } from "react-reveal";
 
-import { Modal, Fade } from "@material-ui/core";
+import { Modal, Fade as FadeIn } from "@material-ui/core";
 import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 
 //image
 import tkmitLogo from "../../assets/hero_section/tkmit.png";
-import heroRight from "../../assets/hero_section/bg.png";
+import heroRight from "../../assets/hero_section/bgc.png";
 import header from "../../assets/home/speakers_header.png";
 import mohnan from "../../assets/speakers/mohanan kunnumel.jpg";
 import sudhamony from "../../assets/speakers/sudhamony.jpg";
@@ -229,179 +231,210 @@ const Home = () => {
       </section>
       <section className={styles.about}>
         <div className={styles.about_card}>
-          <p>
-            <b> Hello There!</b>
+          <Fade left cascade>
+            <p>
+              <b> Hello There!</b>
+              <br />
+              <br />
+              SYNAPSIS '21 marshal as a collaborative venture put forth by{" "}
+              <b>BLAZE TKMIT </b> an organization of{" "}
+              <b>
+                Department of Biomedical Engineering TKM Institute of Technology
+              </b>{" "}
+              in association with{" "}
+              <em>
+                IEEE EMBS Kerala Chapter, IEEE EMBS SBC TKMIT, IEEE SB TKMIT
+              </em>{" "}
+              with the support of Telemedicine Society and Digital Health India,
+              Kerala, is here to anchorage the new lug in health care.
+            </p>
             <br />
-            <br />
-            SYNAPSIS '21 marshal as a collaborative venture put forth by{" "}
-            <b>BLAZE TKMIT </b> an organization of{" "}
-            <b>
-              Department of Biomedical Engineering TKM Institute of Technology
-            </b>{" "}
-            in association with{" "}
-            <em>
-              IEEE EMBS Kerala Chapter, IEEE EMBS SBC TKMIT, IEEE SB TKMIT
-            </em>{" "}
-            with the support of Telemedicine Society and Digital Health India,
-            Kerala, is here to anchorage the new lug in health care.
-          </p>
+          </Fade>
+          <Slide left>
+            {" "}
+            <h3>Pre-Synapsis</h3>
+          </Slide>
           <br />
-          <h3>Pre-Synapsis</h3>
-          <br />
-          <p>
-            Pre-Synapsis was a four-day event that was blessed with the session
-            of Abdul Rahman Sheriff (Medical Device Consultant) and our
-            enthusiastic seniors who were the pillars of our Department
-            Organization, BLAZE.
-            <br />
-            <br />
-            The programme was conducted on the days of 29, 30 of May 2021 and 2,
-            4 of June 2021. The event started with the session on the topic
-            <b>'Opportunities in Med-Tech Industry'</b> by Abdul Rahman Sheriff
-            a Medical Device Consultant and followed by our seniors motivating
-            with their experience and successful journey till the present. They
-            were, Julian Gerald Dcruz, Arshid S, Ardra Asok, Aminath Sabeena,
-            Fousia Yousaf, Midhila P and Ashif Mohammed.
-            <br />
-            <br />
-            The event was also embellished by a prototyping competition
-            <b> Protomata on 2nd June 2021</b> . It helped the participants to
-            familiarize themselves with virtual prototyping and to develop
-            problem-solving skills. The competition was a full-day event.
-            <br />
-            <br />
-            Overall, Pre-Synapsis was a clear cut introduction four our main
-            event that to be conducted on <b> 17th June 2021: Synapsis ’21</b>
-          </p>
+          <Fade left cascade>
+            <p>
+              Pre-Synapsis was a four-day event that was blessed with the
+              session of Abdul Rahman Sheriff (Medical Device Consultant) and
+              our enthusiastic seniors who were the pillars of our Department
+              Organization, BLAZE.
+              <br />
+              <br />
+              The programme was conducted on the days of 29, 30 of May 2021 and
+              2, 4 of June 2021. The event started with the session on the topic
+              <b>'Opportunities in Med-Tech Industry'</b> by Abdul Rahman
+              Sheriff a Medical Device Consultant and followed by our seniors
+              motivating with their experience and successful journey till the
+              present. They were, Julian Gerald Dcruz, Arshid S, Ardra Asok,
+              Aminath Sabeena, Fousia Yousaf, Midhila P and Ashif Mohammed.
+              <br />
+              <br />
+              The event was also embellished by a prototyping competition
+              <b> Protomata on 2nd June 2021</b> . It helped the participants to
+              familiarize themselves with virtual prototyping and to develop
+              problem-solving skills. The competition was a full-day event.
+              <br />
+              <br />
+              Overall, Pre-Synapsis was a clear cut introduction four our main
+              event that to be conducted on <b> 17th June 2021: Synapsis ’21</b>
+            </p>
+          </Fade>
         </div>
       </section>
       <section className={`${styles.speakers} ${styles.grid}`}>
-        <img src={header} alt="header" />
-        <div className={styles.speaker}>
-          <img src={mohnan} alt="speaker1" />
-          <div className={styles.body}>
-            <h2>PROF.(DR.) MOHANAN KUNNUMEL</h2>
-            <p>Vice-Chancellor, Kerala University of Health Sciences</p>
-            <div className={styles.info_icon} onClick={() => openModal(1)}>
-              <InfoOutlinedIcon />
-              <p>More Info</p>
+        <Slide left>
+          <img src={header} alt="header" />
+        </Slide>
+
+        <Fade left>
+          <div className={`${styles.speaker} ${styles.speaker1}`}>
+            <img src={mohnan} alt="speaker1" />
+            <div className={styles.body}>
+              <h2>PROF.(DR.) MOHANAN KUNNUMEL</h2>
+              <p>Vice-Chancellor, Kerala University of Health Sciences</p>
+              <div className={styles.info_icon} onClick={() => openModal(1)}>
+                <InfoOutlinedIcon />
+                <p>More Info</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className={styles.speaker}>
-          <div className={styles.body}>
-            <h2>SMT. SUDHAMONY S</h2>
-            <p>
-              Chief Consultant, E-Health Kerala project, Dept. of Health &
-              FW,Govt of Kerala
-            </p>
-            <div className={styles.info_icon} onClick={() => openModal(2)}>
-              <InfoOutlinedIcon />
-              <p>More Info</p>
+        </Fade>
+        <Fade right>
+          <div className={`${styles.speaker} ${styles.speaker2}`}>
+            <div className={styles.body}>
+              <h2>SMT. SUDHAMONY S</h2>
+              <p>
+                Chief Consultant, E-Health Kerala project, Dept. of Health &
+                FW,Govt of Kerala
+              </p>
+              <div className={styles.info_icon} onClick={() => openModal(2)}>
+                <InfoOutlinedIcon />
+                <p>More Info</p>
+              </div>
+            </div>
+            <img src={sudhamony} alt="speaker2" />
+          </div>
+        </Fade>
+        <Fade left>
+          <div className={`${styles.speaker} ${styles.speaker1}`}>
+            <img src={vimal} alt="speaker3" />
+            <div className={styles.body}>
+              <h2>VIMAL WAKHLU</h2>
+              <p>
+                Former Chairman & Managing Director of TCIL Former President,
+                Telemedicine Society of India
+              </p>
+              <div className={styles.info_icon} onClick={() => openModal(3)}>
+                <InfoOutlinedIcon />
+                <p>More Info</p>
+              </div>
             </div>
           </div>
-          <img src={sudhamony} alt="speaker2" />
-        </div>
-        <div className={styles.speaker}>
-          <img src={vimal} alt="speaker3" />
-          <div className={styles.body}>
-            <h2>VIMAL WAKHLU</h2>
-            <p>
-              Former Chairman & Managing Director of TCIL Former President,
-              Telemedicine Society of India
-            </p>
-            <div className={styles.info_icon} onClick={() => openModal(3)}>
-              <InfoOutlinedIcon />
-              <p>More Info</p>
+        </Fade>
+        <Fade right>
+          <div className={`${styles.speaker} ${styles.speaker2}`}>
+            <div className={styles.body}>
+              <h2>DR PREM NAIR</h2>
+              <p>
+                Medical Director, AIMS, Cochin, Kerala President, Telemedicine
+                Society Of India Kerala Chapter
+              </p>
+              <div className={styles.info_icon} onClick={() => openModal(4)}>
+                <InfoOutlinedIcon />
+                <p>More Info</p>
+              </div>
+            </div>
+            <img src={prem} alt="speaker4" />
+          </div>
+        </Fade>
+        <Fade left>
+          <div className={`${styles.speaker} ${styles.speaker1}`}>
+            <img src={uma} alt="speaker5" />
+            <div className={styles.body}>
+              <h2>DR.UMA NAMBIAR</h2>
+              <p>
+                Healthcare administrator and International healthcare consultant
+                Executive Director, Gimcare Hospital
+              </p>
+              <div className={styles.info_icon} onClick={() => openModal(5)}>
+                <InfoOutlinedIcon />
+                <p>More Info</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className={styles.speaker}>
-          <div className={styles.body}>
-            <h2>DR PREM NAIR</h2>
-            <p>
-              Medical Director, Amrita Institute of Medical Sciences and
-              Research Centre (AIMS), Cochin, Kerala President, Telemedicine
-              Society Of India Kerala Chapter
-            </p>
-            <div className={styles.info_icon} onClick={() => openModal(4)}>
-              <InfoOutlinedIcon />
-              <p>More Info</p>
+        </Fade>
+        <Fade right>
+          <div className={`${styles.speaker} ${styles.speaker2}`}>
+            <div className={styles.body}>
+              <h2>DR.SANJAY SOOD</h2>
+              <p>
+                Project Director (e Sanjeevani)& Associate Director, Centre for
+                Development of Advanced Computing (C-DAC), Mohali.
+              </p>
+              <div className={styles.info_icon} onClick={() => openModal(6)}>
+                <InfoOutlinedIcon />
+                <p>More Info</p>
+              </div>
+            </div>
+            <img src={sanjay} alt="speaker6" />
+          </div>
+        </Fade>
+        <Fade left>
+          <div className={`${styles.speaker} ${styles.speaker1}`}>
+            <img src={murthy} alt="speaker7" />
+            <div className={styles.body}>
+              <h2>DR.MURTHY REMILLA</h2>
+              <p>
+                Head, Project Management, Human Spaceflight Group, Human Space
+                Program of India, Gaganyaan ISRO
+              </p>
+              <div className={styles.info_icon} onClick={() => openModal(7)}>
+                <InfoOutlinedIcon />
+                <p>More Info</p>
+              </div>
             </div>
           </div>
-          <img src={prem} alt="speaker4" />
-        </div>
-        <div className={styles.speaker}>
-          <img src={uma} alt="speaker5" />
-          <div className={styles.body}>
-            <h2>DR.UMA NAMBIAR</h2>
-            <p>
-              Healthcare administrator and International healthcare consultant
-              Executive Director, Gimcare Hospital, Chairperson Digital Health
-              India Association
-            </p>
-            <div className={styles.info_icon} onClick={() => openModal(5)}>
-              <InfoOutlinedIcon />
-              <p>More Info</p>
+        </Fade>
+        <Fade right>
+          <div className={`${styles.speaker} ${styles.speaker2}`}>
+            <div className={styles.body}>
+              <h2>ER.FAROOQ AHMAD WANI</h2>
+              <p>
+                State Nodal Officer (Telemedicine), Jammu and Kashmir
+                Superintending Engineer
+              </p>
+              <div className={styles.info_icon} onClick={() => openModal(8)}>
+                <InfoOutlinedIcon />
+                <p>More Info</p>
+              </div>
+            </div>
+            <img src={farooq} alt="speaker8" />
+          </div>
+        </Fade>
+        <Fade left>
+          <div className={`${styles.speaker} ${styles.speaker1}`}>
+            <img src={bijoy} alt="speaker9" />
+            <div className={styles.body}>
+              <h2>BIJOY M.G</h2>
+              <p>
+                Managing Director, Unarv Telemedicine and Healthcare services
+                Executive Committee member, Telemedicine Society of India
+              </p>
+              <div className={styles.info_icon} onClick={() => openModal(9)}>
+                <InfoOutlinedIcon />
+                <p>More Info</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className={styles.speaker}>
-          <div className={styles.body}>
-            <h2>DR.SANJAY SOOD</h2>
-            <p>
-              Project Director (e Sanjeevani)& Associate Director, Centre for
-              Development of Advanced Computing (C-DAC), Mohali.
-            </p>
-            <div className={styles.info_icon} onClick={() => openModal(6)}>
-              <InfoOutlinedIcon />
-              <p>More Info</p>
-            </div>
-          </div>
-          <img src={sanjay} alt="speaker6" />
-        </div>
-        <div className={styles.speaker}>
-          <img src={murthy} alt="speaker7" />
-          <div className={styles.body}>
-            <h2>DR.MURTHY REMILLA</h2>
-            <p>
-              Head, Project Management, Human Spaceflight Group, Human Space
-              Program of India, Gaganyaan ISRO
-            </p>
-            <div className={styles.info_icon} onClick={() => openModal(7)}>
-              <InfoOutlinedIcon />
-              <p>More Info</p>
-            </div>
-          </div>
-        </div>
-        <div className={styles.speaker}>
-          <div className={styles.body}>
-            <h2>ER.FAROOQ AHMAD WANI</h2>
-            <p>
-              State Nodal Officer (Telemedicine), Jammu and Kashmir
-              Superintending Engineer
-            </p>
-            <div className={styles.info_icon} onClick={() => openModal(8)}>
-              <InfoOutlinedIcon />
-              <p>More Info</p>
-            </div>
-          </div>
-          <img src={farooq} alt="speaker8" />
-        </div>
-        <div className={styles.speaker}>
-          <img src={bijoy} alt="speaker9" />
-          <div className={styles.body}>
-            <h2>BIJOY M.G</h2>
-            <p>
-              Managing Director, Unarv Telemedicine and Healthcare services
-              Executive Committee member, Telemedicine Society of India
-            </p>
-            <div className={styles.info_icon} onClick={() => openModal(9)}>
-              <InfoOutlinedIcon />
-              <p>More Info</p>
-            </div>
-          </div>
-        </div>
+        </Fade>
+      </section>
+      <section className={styles.cta}>
+        <Link to="/schedules">
+          <button> Check Schedules </button>
+        </Link>
       </section>
       <Modal
         open={modal}
@@ -411,7 +444,7 @@ const Home = () => {
         className={styles.modal}
         closeAfterTransition
       >
-        <Fade in={modal}>
+        <FadeIn in={modal}>
           <div className={styles.modal_container}>
             <img src={speaker.image} alt="speaker" />
             <section>
@@ -430,7 +463,7 @@ const Home = () => {
               </p>
             </section>
           </div>
-        </Fade>
+        </FadeIn>
       </Modal>
     </div>
   );

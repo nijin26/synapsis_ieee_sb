@@ -14,8 +14,12 @@ li {
 }
 
 body {
-  overflow-x: hidden;
   font-family: "Rubik-Regular";
   font-family: "Poppins", sans-serif;
   height: 100%;
+}
+
+@font-face {
+  font-family: "Gotham-Black";
+  src: url("assets/font/Gotham_Black.otf");
 }

@@ -2,9 +2,6 @@ import React from "react";
 import styles from "./AboutUs.module.css";
 import Grid from "@material-ui/core/Grid";
 
-//images
-// import Backgoround from "../../assets/about_bg.png";
-
 const AboutUs = () => {
   return (
     <div>
@@ -32,7 +29,7 @@ const AboutUs = () => {
               professionals. It also included a very productive session for the
               healthcare industry: ‘A free medical equipment maintenance camp’.
               his was followed by the next year with a two-day event of Synapsis
-              '14.𝒀
+              '14.
               <br></br>
               <br></br>
               This national event highly disappointingly went through a break

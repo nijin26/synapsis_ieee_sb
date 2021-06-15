@@ -1,6 +1,7 @@
 // Mobile First Design
 
 .container {
+  overflow: hidden;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -52,13 +53,15 @@
     }
     & > h1 {
       margin-left: 20px;
+      font-family: "Gotham-Black", sans-serif;
+      letter-spacing: 2.5px;
       font-size: 4rem;
       text-transform: uppercase;
     }
     & > h2 {
       width: 50%;
-      margin: 0px 20%;
-      font-weight: 900;
+      font-family: "Gotham-Black", sans-serif;
+      margin: 0px 30%;
       letter-spacing: 10px;
       font-size: 8rem;
     }
@@ -66,7 +69,8 @@
 
   &_right {
     grid-column: 6/9;
-
+    width: 95%;
+    margin-left: 20%;
     & > img {
       width: 100%;
       height: 100%;
@@ -148,6 +152,37 @@
           margin-left: 10px;
         }
       }
+    }
+  }
+}
+
+.cta {
+  height: 250px;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    rgba(242, 232, 222, 0.863)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & button {
+    background: #115159;
+    padding: 2rem 3.5rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    border: 4px solid transparent;
+    transition: all 0.4s ease;
+
+    &:active,
+    &:hover {
+      background: #ffd657;
+      color: #115159;
+      border: 4px solid #115159;
     }
   }
 }
@@ -247,6 +282,55 @@
     }
   }
 
+  .speakers {
+    width: 80%;
+    margin: 0 auto;
+    & > img {
+      width: 400px;
+    }
+
+    & > .speaker1 {
+      grid-column: 1/8;
+      & > .body {
+        margin-left: 30px;
+      }
+    }
+
+    & > .speaker2 {
+      grid-column: 2/9;
+      & > .body {
+        margin-right: 30px;
+      }
+    }
+
+    & > .speaker {
+      display: flex;
+      justify-content: flex-start;
+      margin: 4% 1rem;
+
+      & > img {
+        width: 110px;
+        height: 110px;
+        border-radius: 55px;
+      }
+
+      & > .body {
+        & > h2 {
+          font-size: 1.6rem;
+        }
+
+        & > p {
+          margin-top: 1rem;
+          font-size: 1.2rem;
+        }
+
+        & > .info_icon {
+          width: 40%;
+        }
+      }
+    }
+  }
+
   .modal_container {
     min-height: 40vh;
 
@@ -315,6 +399,16 @@
       min-height: 100vh;
     }
   }
+
+  .speakers {
+    & > .speaker1 {
+      grid-column: 1/7;
+    }
+
+    & > .speaker2 {
+      grid-column: 3/9;
+    }
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -352,7 +446,6 @@
       min-height: 80vh;
     }
   }
-
   .modal_container {
     min-height: 40vh;
     width: 50%;
@@ -393,6 +486,53 @@
       & > p {
         margin: 8px auto;
         font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .speakers {
+    width: 70%;
+    margin: 0 auto;
+    & > img {
+      width: 600px;
+    }
+
+    & > .speaker1 {
+      grid-column: 1/6;
+    }
+
+    & > .speaker2 {
+      grid-column: 3/9;
+      justify-self: end;
+    }
+
+    & > .speaker {
+      display: flex;
+      justify-content: flex-start;
+      margin: 3% 1rem;
+
+      & > img {
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+      }
+
+      & > .body {
+        & > h2 {
+          font-size: 2rem;
+        }
+
+        & > p {
+          margin-top: 1rem;
+          font-size: 1.6rem;
+        }
+
+        & > .info_icon {
+          width: 120px;
+          font-size: 1.3rem;
+        }
       }
     }
   }

@@ -10,6 +10,7 @@ import {
 import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home/Home";
 import AboutUs from "./pages/AboutUs/AboutUs";
+import Schedules from "./pages/Schedules/Schedules";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route exact path="/about">
             <AboutUs />
+          </Route>
+          <Route exact path="/schedules">
+            <Schedules />
           </Route>
           <Redirect to="/" />
         </Switch>
