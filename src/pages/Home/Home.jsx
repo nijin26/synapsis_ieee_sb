@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Fade, Slide } from "react-reveal";
+import Tada from "react-reveal/Tada";
 
 import { Modal, Fade as FadeIn } from "@material-ui/core";
 import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
+import Slider from "../../components/Slider/Slider";
 
 //image
 import tkmitLogo from "../../assets/hero_section/tkmit.png";
@@ -219,7 +221,9 @@ const Home = () => {
           <img src={tkmitLogo} alt="tkmit_logo" />
           <p>Department Of Biomedical Engineering</p>
           <p className={styles.lead}>Discover the difference</p>
-          <h1>Synapsis'</h1>
+          <Tada>
+            <h1>Synapsis'</h1>
+          </Tada>
           <h2>21</h2>
           <p className={styles.lead}>
             Streamlining the Digitalization in Healthcare amidst Pandemic
@@ -229,6 +233,7 @@ const Home = () => {
           <img src={heroRight} alt="bg" />
         </div>
       </section>
+
       <section className={styles.about}>
         <div className={styles.about_card}>
           <Fade left cascade>
@@ -430,6 +435,9 @@ const Home = () => {
             </div>
           </div>
         </Fade>
+      </section>
+      <section style={{ width: "100%" }}>
+        <Slider />
       </section>
       <section className={styles.cta}>
         <Link to="/schedules">

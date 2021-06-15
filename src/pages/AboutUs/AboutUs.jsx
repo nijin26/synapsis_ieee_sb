@@ -2,18 +2,21 @@ import React from "react";
 import styles from "./AboutUs.module.css";
 import Grid from "@material-ui/core/Grid";
 
+import { Fade } from "react-reveal";
+
 const AboutUs = () => {
   return (
     <div>
       <div className={styles.hero_section}>
         <div>
-          <p className={styles.hero_main}>
-            LEGACY OF <br></br>SYNAPSIS’21, BLAZE, EMBS
-          </p>
-          <p className={styles.hero_sub}>On it’s way to building a legacy</p>
+          <Fade left>
+            <p className={styles.hero_main}>
+              LEGACY OF <br></br>SYNAPSIS’21, BLAZE, EMBS
+            </p>
+            <p className={styles.hero_sub}>On it’s way to building a legacy</p>
+          </Fade>
         </div>
       </div>
-
       <div className={styles.body_container}>
         <div className={styles.main_container}>
           <Grid container direction="row" justify="center" alignItems="center">
