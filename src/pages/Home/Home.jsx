@@ -29,7 +29,7 @@ import styles from "./Home.module.scss";
 const speakers = [
   {
     id: 1,
-    name: "PROF.(DR.) MOHANAN KUNNUMEL",
+    name: "PROF.(DR.) MOHANAN KUNNUMMAL",
     about: `Vice-chancellor of the Kerala university of health
 sciences. He spread his wings as the state president of the government medical college
 teacher's association and as well as the president of the national radiological and imaging
@@ -59,23 +59,7 @@ Cancer, etc.  `,
 
   {
     id: 3,
-    name: "VIMAL WAKHLU",
-    about: `Former Chairman and Managing Director of Telecommunications Consultant India Ltd.
-Past President of The Telemedicine Society of India
-Ex-Board Member of International Society for Telemedicine and eHealth
-Telecom Professional with 44 years of Expertise
-Certified PMP of Project Management Institute, Pennsylvania, US.`,
-    image: vimal,
-    talkNum: "2",
-    topic: `Implementing Telemedicine
- and Digital Health, Leveraging
- Emerging Technologies`,
-    date: "Day-2 : June 18, 2021",
-    time: `19:30-20:30 IST`,
-  },
-  {
-    id: 4,
-    name: "DR PREM NAIR",
+    name: "DR.PREM NAIR",
     about: `Medical Director, Amrita Institute of Medical Sciences and Research, Cochin, Kerala
 MBBS: Bombay University, National Medical College
 Internal Medicine-Bronx Hospital, Alberta Einstein College of Medicine, New YorkGastrointestinal and Liver Diseases Fellowship University of Southern California School of
@@ -90,7 +74,37 @@ FACP, FRCP`,
   },
 
   {
+    id: 4,
+    name: "Mr VIMAL WAKHLU",
+    about: `Former Chairman and Managing Director of Telecommunications Consultant India Ltd.
+Past President of The Telemedicine Society of India
+Ex-Board Member of International Society for Telemedicine and eHealth
+Telecom Professional with 44 years of Expertise
+Certified PMP of Project Management Institute, Pennsylvania, US.`,
+    image: vimal,
+    talkNum: "2",
+    topic: `Implementing Telemedicine
+ and Digital Health, Leveraging
+ Emerging Technologies`,
+    date: "Day-2 : June 18, 2021",
+    time: `19:30-20:30 IST`,
+  },
+
+  {
     id: 5,
+    name: "Mr BIJOY M.G",
+    about: `Managing Director, Unarv Telemedicine and Healthcare Services
+Executive Committee member, Telemedicine Society of India.`,
+    image: bijoy,
+    talkNum: "1",
+    topic: `Telemedicine:
+ Yesterday, Today and Tomorrow`,
+    date: `DAY-3: June 19, 2021`,
+    time: `18:00-19:00 IST`,
+  },
+
+  {
+    id: 6,
     name: "DR.UMA NAMBIAR",
     about: `Neurosurgeon, Healthcare Administrator and International Healthcare Consultant Executive Director, Gimcare Hospital, Kannur, Kerala
 Co-founder and Chairperson of Digital Health India Association
@@ -107,7 +121,7 @@ Member, Healthcare `,
   },
 
   {
-    id: 6,
+    id: 7,
     name: "DR.SANJAY SOOD",
     about: `Associate Director, Centre for Development of Advanced Computing(Mohali), India
 Project Director, e-Sanjeevani
@@ -121,23 +135,6 @@ kind of a multi-tiered national telemedicine network for PLHIV
  Innovations in Practice`,
     date: `DAY-4: June 20, 2021`,
     time: `11:00-12:00 IST`,
-  },
-
-  {
-    id: 7,
-    name: "DR.MURTHY REMILLA",
-    about: `Head, Project Management, Human Spaceflight Group, Human Space Program of India
-Gaganyaan ISRO
-Head of Supply Chain Management, ISRO Satellite Centre, Bangalore
-25 years of rich cross-functional Experience covering the technical, business and
-Managerial domains
-`,
-    image: murthy,
-    talkNum: "3",
-    topic: `Evolution and Growth of
- Telemedicine in India`,
-    date: `DAY-4: June 20, 2021`,
-    time: `19:30-20:30 IST`,
   },
 
   {
@@ -156,15 +153,19 @@ Medical Science, Srinagar State Nodal Officer (Telemedicine), Jammu and Kashmir`
 
   {
     id: 9,
-    name: "BIJOY M.G",
-    about: `Managing Director, Unarv Telemedicine and Healthcare Services
-Executive Committee member, Telemedicine Society of India.`,
-    image: bijoy,
-    talkNum: "1",
-    topic: `Telemedicine:
- Yesterday, Today and Tomorrow`,
-    date: `DAY-3: June 19, 2021`,
-    time: `18:00-19:00 IST`,
+    name: "DR.MURTHY REMILLA",
+    about: `Head, Project Management, Human Spaceflight Group, Human Space Program of India
+Gaganyaan ISRO
+Head of Supply Chain Management, ISRO Satellite Centre, Bangalore
+25 years of rich cross-functional Experience covering the technical, business and
+Managerial domains
+`,
+    image: murthy,
+    talkNum: "3",
+    topic: `Evolution and Growth of
+ Telemedicine in India`,
+    date: `DAY-4: June 20, 2021`,
+    time: `19:30-20:30 IST`,
   },
 ];
 
@@ -217,7 +218,9 @@ const Home = () => {
     <div className={styles.container}>
       <section className={`${styles.hero} ${styles.grid}`}>
         <div className={styles.hero_left}>
-          <div className={styles.hero_left_date}>June 17 - 20</div>
+          <Fade left>
+            <div className={styles.hero_left_date}>June 17 - 20</div>
+          </Fade>
           <img src={tkmitLogo} alt="tkmit_logo" />
           <p>Department Of Biomedical Engineering</p>
           <p className={styles.lead}>Discover the difference</p>
@@ -236,57 +239,57 @@ const Home = () => {
 
       <section className={styles.about}>
         <div className={styles.about_card}>
-          <Fade left cascade>
-            <p>
+          <p>
+            <Fade left cascade>
               <b> Hello There!</b>
-              <br />
-              <br />
-              SYNAPSIS '21 marshal as a collaborative venture put forth by{" "}
-              <b>BLAZE TKMIT </b> an organization of{" "}
-              <b>
-                Department of Biomedical Engineering TKM Institute of Technology
-              </b>{" "}
-              in association with{" "}
-              <em>
-                IEEE EMBS Kerala Chapter, IEEE EMBS SBC TKMIT, IEEE SB TKMIT
-              </em>{" "}
-              with the support of Telemedicine Society and Digital Health India,
-              Kerala, is here to anchorage the new lug in health care.
-            </p>
+            </Fade>
             <br />
-          </Fade>
+            <br />
+            SYNAPSIS '21 marshal as a collaborative venture put forth by{" "}
+            <b>BLAZE TKMIT </b> an organization of{" "}
+            <b>
+              Department of Biomedical Engineering TKM Institute of Technology
+            </b>{" "}
+            in association with{" "}
+            <em>
+              IEEE EMBS Kerala Chapter, IEEE EMBS SBC TKMIT, IEEE SB TKMIT
+            </em>{" "}
+            with the support of Telemedicine Society of India, Kerala Chapter
+            Digital Health India Association is here to anchorage the new lug in
+            health care.
+          </p>
+          <br />
           <Slide left>
             {" "}
             <h3>Pre-Synapsis</h3>
           </Slide>
           <br />
-          <Fade left cascade>
-            <p>
-              Pre-Synapsis was a four-day event that was blessed with the
-              session of Abdul Rahman Sheriff (Medical Device Consultant) and
-              our enthusiastic seniors who were the pillars of our Department
-              Organization, BLAZE.
-              <br />
-              <br />
-              The programme was conducted on the days of 29, 30 of May 2021 and
-              2, 4 of June 2021. The event started with the session on the topic
-              <b>'Opportunities in Med-Tech Industry'</b> by Abdul Rahman
-              Sheriff a Medical Device Consultant and followed by our seniors
-              motivating with their experience and successful journey till the
-              present. They were, Julian Gerald Dcruz, Arshid S, Ardra Asok,
-              Aminath Sabeena, Fousia Yousaf, Midhila P and Ashif Mohammed.
-              <br />
-              <br />
-              The event was also embellished by a prototyping competition
-              <b> Protomata on 2nd June 2021</b> . It helped the participants to
-              familiarize themselves with virtual prototyping and to develop
-              problem-solving skills. The competition was a full-day event.
-              <br />
-              <br />
-              Overall, Pre-Synapsis was a clear cut introduction four our main
-              event that to be conducted on <b> 17th June 2021: Synapsis ’21</b>
-            </p>
-          </Fade>
+          <p>
+            Pre-Synapsis was a four-day event that was blessed with the session
+            of Abdul Rahman Sheriff (Medical Device Consultant) and our
+            enthusiastic seniors who were the pillars of our Department
+            Organization, BLAZE.
+            <br />
+            <br />
+            The programme was conducted on the days of 29, 30 of May 2021 and 2,
+            4 of June 2021. The event started with the session on the topic
+            <b>'Opportunities in Med-Tech Industry'</b> by Abdul Rahman Sheriff
+            a Medical Device Consultant and followed by our seniors motivating
+            with their experience and successful journey till the present. They
+            were, Julian Gerald Dcruz, Arshid S, Ardra Asok, Aminath Sabeena,
+            Fousia Yousaf, Midhila P and Ashif Mohammed.
+            <br />
+            <br />
+            The event was also embellished by a prototyping competition
+            <b> Protomata on 2nd June 2021</b> . It helped the participants to
+            familiarize themselves with virtual prototyping and to develop
+            problem-solving skills. The competition was a full-day event.
+            <br />
+            <br />
+            Overall, Pre-Synapsis was a clear cut introduction for our main
+            event that is to be conducted on{" "}
+            <b> 17th June 2021: Synapsis ’21</b>
+          </p>
         </div>
       </section>
       <section className={`${styles.speakers} ${styles.grid}`}>
@@ -298,7 +301,7 @@ const Home = () => {
           <div className={`${styles.speaker} ${styles.speaker1}`}>
             <img src={mohnan} alt="speaker1" />
             <div className={styles.body}>
-              <h2>PROF.(DR.) MOHANAN KUNNUMEL</h2>
+              <h2>PROF.(DR.) MOHANAN KUNNUMMAL</h2>
               <p>Vice-Chancellor, Kerala University of Health Sciences</p>
               <div className={styles.info_icon} onClick={() => openModal(1)}>
                 <InfoOutlinedIcon />
@@ -325,44 +328,45 @@ const Home = () => {
         </Fade>
         <Fade left>
           <div className={`${styles.speaker} ${styles.speaker1}`}>
-            <img src={vimal} alt="speaker3" />
             <div className={styles.body}>
-              <h2>VIMAL WAKHLU</h2>
+              <h2>DR.PREM NAIR</h2>
               <p>
-                Former Chairman & Managing Director of TCIL Former President,
-                Telemedicine Society of India
+                Medical Director, AIMS, Cochin, Kerala President, Telemedicine
+                Society Of India Kerala Chapter
               </p>
               <div className={styles.info_icon} onClick={() => openModal(3)}>
                 <InfoOutlinedIcon />
                 <p>More Info</p>
               </div>
             </div>
+            <img src={prem} alt="speaker3" />
           </div>
         </Fade>
         <Fade right>
           <div className={`${styles.speaker} ${styles.speaker2}`}>
+            <img src={vimal} alt="speaker4" />
             <div className={styles.body}>
-              <h2>DR PREM NAIR</h2>
+              <h2>Mr. VIMAL WAKHLU</h2>
               <p>
-                Medical Director, AIMS, Cochin, Kerala President, Telemedicine
-                Society Of India Kerala Chapter
+                Former Chairman & Managing Director of TCIL Former President,
+                Telemedicine Society of India
               </p>
               <div className={styles.info_icon} onClick={() => openModal(4)}>
                 <InfoOutlinedIcon />
                 <p>More Info</p>
               </div>
             </div>
-            <img src={prem} alt="speaker4" />
           </div>
         </Fade>
+
         <Fade left>
           <div className={`${styles.speaker} ${styles.speaker1}`}>
-            <img src={uma} alt="speaker5" />
+            <img src={bijoy} alt="speaker5" />
             <div className={styles.body}>
-              <h2>DR.UMA NAMBIAR</h2>
+              <h2>Mr. BIJOY M.G</h2>
               <p>
-                Healthcare administrator and International healthcare consultant
-                Executive Director, Gimcare Hospital
+                Managing Director, Unarv Telemedicine and Healthcare services
+                Executive Committee member, Telemedicine Society of India
               </p>
               <div className={styles.info_icon} onClick={() => openModal(5)}>
                 <InfoOutlinedIcon />
@@ -371,36 +375,38 @@ const Home = () => {
             </div>
           </div>
         </Fade>
+
         <Fade right>
           <div className={`${styles.speaker} ${styles.speaker2}`}>
+            <img src={uma} alt="speaker6" />
             <div className={styles.body}>
-              <h2>DR.SANJAY SOOD</h2>
+              <h2>DR.UMA NAMBIAR</h2>
               <p>
-                Project Director (e Sanjeevani)& Associate Director, Centre for
-                Development of Advanced Computing (C-DAC), Mohali.
+                Healthcare administrator and International healthcare consultant
+                Executive Director, Gimcare Hospital
               </p>
               <div className={styles.info_icon} onClick={() => openModal(6)}>
                 <InfoOutlinedIcon />
                 <p>More Info</p>
               </div>
             </div>
-            <img src={sanjay} alt="speaker6" />
           </div>
         </Fade>
+
         <Fade left>
           <div className={`${styles.speaker} ${styles.speaker1}`}>
-            <img src={murthy} alt="speaker7" />
             <div className={styles.body}>
-              <h2>DR.MURTHY REMILLA</h2>
+              <h2>DR.SANJAY SOOD</h2>
               <p>
-                Head, Project Management, Human Spaceflight Group, Human Space
-                Program of India, Gaganyaan ISRO
+                Project Director (e Sanjeevani)& Associate Director, Centre for
+                Development of Advanced Computing (C-DAC), Mohali.
               </p>
               <div className={styles.info_icon} onClick={() => openModal(7)}>
                 <InfoOutlinedIcon />
                 <p>More Info</p>
               </div>
             </div>
+            <img src={sanjay} alt="speaker7" />
           </div>
         </Fade>
         <Fade right>
@@ -421,12 +427,12 @@ const Home = () => {
         </Fade>
         <Fade left>
           <div className={`${styles.speaker} ${styles.speaker1}`}>
-            <img src={bijoy} alt="speaker9" />
+            <img src={murthy} alt="speaker9" />
             <div className={styles.body}>
-              <h2>BIJOY M.G</h2>
+              <h2>DR.MURTHY REMILLA</h2>
               <p>
-                Managing Director, Unarv Telemedicine and Healthcare services
-                Executive Committee member, Telemedicine Society of India
+                Head, Project Management, Human Spaceflight Group, Human Space
+                Program of India, Gaganyaan ISRO
               </p>
               <div className={styles.info_icon} onClick={() => openModal(9)}>
                 <InfoOutlinedIcon />

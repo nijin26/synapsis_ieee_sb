@@ -10,9 +10,9 @@ const AboutUs = () => {
       <div className={styles.hero_section}>
         <div>
           <Fade left>
-            <p className={styles.hero_main}>
-              LEGACY OF <br></br>SYNAPSIS’21, BLAZE, EMBS
-            </p>
+            <p className={styles.hero_main}>Genesis of Synapsis</p>
+          </Fade>
+          <Fade right>
             <p className={styles.hero_sub}>On it’s way to building a legacy</p>
           </Fade>
         </div>
@@ -31,12 +31,12 @@ const AboutUs = () => {
               sectors, with a 3-day event that involved seminar sessions with
               professionals. It also included a very productive session for the
               healthcare industry: ‘A free medical equipment maintenance camp’.
-              his was followed by the next year with a two-day event of Synapsis
-              '14.
+              This was followed by the next year with a two-day event of
+              Synapsis '14.
               <br></br>
               <br></br>
-              This national event highly disappointingly went through a break
-              for the next few years.
+              This national event disappointingly went through a break for the
+              next few years.
               <br></br>
               <br></br>
               However, when in struggles of covid pandemic arose the team

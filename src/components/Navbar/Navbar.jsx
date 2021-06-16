@@ -17,9 +17,12 @@ const Navbar = () => {
         <Link to="/about">
           <button className={styles.abt_btn}>About Us</button>
         </Link>
-        <Link to="/register">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSc9YVyQ62FFbhu6h9BKlrOmDp3SUBEl8VuP6jfYF-CRFYzqug/viewform"
+          target="_blank"
+        >
           <button className={styles.reg_btn}>Register Now</button>
-        </Link>
+        </a>
       </div>
     </div>
   );
