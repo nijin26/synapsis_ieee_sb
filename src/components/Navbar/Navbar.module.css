@@ -1,5 +1,5 @@
 .header {
-  height: 8vh;
+  min-height: 8vh;
   align-content: space-around;
   background-color: #115159;
   overflow: hidden;

@@ -1,0 +1,36 @@
+.container {
+  & > header {
+    min-height: 20vh;
+    background: #f2e8de;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > h1 {
+      font-size: 3rem;
+      color: #838383;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+
+  & > section {
+    min-height: 20vh;
+  }
+
+  & > .date {
+    margin: 1rem auto;
+    text-align: center;
+    background: #d5f3fe;
+    color: rgba(0, 0, 0, 0.74);
+    min-height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem auto;
+  }
+}

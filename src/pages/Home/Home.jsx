@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Fade, Slide } from "react-reveal";
+import { Fade, Slide, Zoom } from "react-reveal";
 import Tada from "react-reveal/Tada";
 
 import { Modal, Fade as FadeIn } from "@material-ui/core";
@@ -446,9 +446,11 @@ const Home = () => {
         <Slider />
       </section>
       <section className={styles.cta}>
-        <Link to="/schedules">
-          <button> Check Schedules </button>
-        </Link>
+        <Zoom bttom>
+          <Link to="/schedules">
+            <button> Check Schedules </button>
+          </Link>
+        </Zoom>
       </section>
       <Modal
         open={modal}
