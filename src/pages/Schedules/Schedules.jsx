@@ -20,7 +20,7 @@ const useStyles = makeStyles({
   tableContainer: {
     borderRadius: 10,
     margin: "0 auto",
-    maxWidth: "95%",
+    maxWidth: "90%",
   },
   tableHeaderCell: {
     fontSize: "1.5rem",
@@ -38,44 +38,30 @@ function createData(time, session, speaker) {
 }
 
 const firstDayRows = [
-  createData("5:00pm to 5:25 pm", "Inaugural Function", ""),
+  createData("5:00pm - 5:25pm", "Inaugural Function", ""),
   createData(
-    "5:25 pm to 6:00 pm",
+    "5:25pm - 6:00pm",
     "Technical Session 1",
     "Prof.(Dr) Mohanan Kunnummal"
   ),
-  createData(
-    "5:25 pm to 6:00 pm",
-    "Technical Session 2",
-    "Ms.Sudhamony S",
-    24,
-    6.0
-  ),
+  createData("7:30pm - 8:30pm", "Technical Session 2", "Ms.Sudhamony S"),
 ];
 
 const secondDayRows = [
-  createData("6:00 pm to 7:30 pm", "Technical Session 3", "Dr.Prem Nair"),
-  createData("7:30 pm to 8:30 pm", "Technical Session 4", "Mr.Vimal Wakhlu"),
+  createData("6:00pm - 7:30pm", "Technical Session 3", "Dr.Prem Nair"),
+  createData("7:30pm - 8:30pm", "Technical Session 4", "Mr.Vimal Wakhlu"),
 ];
 
 const thirdDayRows = [
-  createData("6:00 pm to 7:00 pm", "Technical Session 5", "Mr. Bijoy M.G"),
-  createData("7:30 pm to 8:30 pm", "Technical Session 6", "Dr.Uma Nambiar"),
+  createData("6:00pm - 7:00pm", "Technical Session 5", "Mr. Bijoy M.G"),
+  createData("7:30pm - 8:30pm", "Technical Session 6", "Dr.Uma Nambiar"),
 ];
 
 const fourthDayRows = [
-  createData("11:00 am to 12:00 pm", "Technical Session 7", "Dr.Sanjay Sood"),
-  createData(
-    "6:00 pm to 7:00 pm",
-    "Technical Session 8",
-    "Mr.Farooq Ahmad Wani"
-  ),
-  createData(
-    "7:30 pm to 8:30 pm",
-    "Technical Session 9",
-    "Mr.Murthy Remilla L N"
-  ),
-  createData("8:30 pm", "Valedictory Function", ""),
+  createData("11:00am - 12:00pm", "Technical Session 7", "Dr.Sanjay Sood"),
+  createData("6:00pm - 7:00pm", "Technical Session 8", "Mr.Farooq Ahmad Wani"),
+  createData("7:30pm - 8:30pm", "Technical Session 9", "Mr.Murthy Remilla L N"),
+  createData("8:30pm", "Valedictory Function", ""),
 ];
 
 const Schedules = () => {
