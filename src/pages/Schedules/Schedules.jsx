@@ -45,7 +45,7 @@ const firstDayRows = [
     "Technical Session 1",
     "Prof.(Dr) Mohanan Kunnummal"
   ),
-  createData("7:30pm - 8:30pm", "Technical Session 2", "Ms.Sudhamony S"),
+  createData("7:30pm - 8:30pm", "Technical Session 2", "Smt.Sudhamony S"),
 ];
 
 const secondDayRows = [
@@ -60,7 +60,7 @@ const thirdDayRows = [
 
 const fourthDayRows = [
   createData("11:00am - 12:00pm", "Technical Session 7", "Dr.Sanjay Sood"),
-  createData("6:00pm - 7:00pm", "Technical Session 8", "Mr.Farooq Ahmad Wani"),
+  createData("6:00pm - 7:00pm", "Technical Session 8", "Er.Farooq Ahmad Wani"),
   createData("7:30pm - 8:30pm", "Technical Session 9", "Mr.Murthy Remilla L N"),
   createData("8:30pm", "Valedictory Function", ""),
 ];
