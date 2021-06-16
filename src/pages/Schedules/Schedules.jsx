@@ -27,6 +27,7 @@ const useStyles = makeStyles({
     fontWeight: "bold",
     backgroundColor: "#115159",
     color: "#f2e8de",
+    width: "10%",
   },
   tableColCell: {
     fontSize: "1.3rem",
